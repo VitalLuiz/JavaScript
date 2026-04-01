@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var nota1 = parseInt(prompt("Digite sua primeira nota: "));
+        var nota2 = parseInt(prompt("Digite sua segunda nota: "));
+        var nota3 = parseInt(prompt("Digite sua terceira nota: "));
+        var nota4 = parseInt(prompt("Digite sua quarta nota: "));
+        var media = null;
+
+        media = (nota1+nota2+nota3+nota4)/4
+        if(media > 6){
+            document.write("<h1>Parabéns você foi aprovado!</h1>")
+        }else if(media < 6 && media > 4){
+            document.write("<h1>Você ficou de recuperação!</h1>")
+        }else{
+            document.write("<h1>Você reprovou!</h1>")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
