@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function soma(a,b){
+            if(b == undefined){
+                b = 0
+            }
+            return a + b
+        }
+        document.write("A soma é: " + soma(7,7,5,6)) //desconsidera os outros parametros
+        document.write("A soma é: " + soma(3)) // 7 + undefined = Nan(Not a number)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

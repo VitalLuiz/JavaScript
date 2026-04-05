@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function exibirArtigo(id, calbacksucess, calbackerro){
+            if(true){
+                calbacksucess("Funções de callback em js", "Funções de callback são muito utilizadas")
+            }else{
+                calbackerro("Erro ao recuperar os dados")
+            }
+        }
+        var calbacksucess = function(titulo, descricao){
+            document.write("<h1>" + titulo + "</h1>")
+            document.write("<hr>")
+            document.write("<h1>" + descricao + "</h1>")
+        }
+        var calbackerro = function(erro){
+            document.write("<h1>Erro: " + erro + "</h1>")
+        }
+        exibirArtigo(1, calbacksucess, calbackerro)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
