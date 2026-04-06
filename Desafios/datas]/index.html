@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num1 = parseInt(prompt("Digite o primeiro valor: "))
+        var operacao = prompt("Digite a operação (soma/subtração): ")
+        var num2 = parseInt(prompt("Digite o segundo numero: "))
+
+        function soma(num1, num2, operacao){
+            operacao = num1 + num2
+            return operacao
+        }
+        function subtracao(num1, num2, operacao){
+            operacao = num1 - num2
+            return operacao
+        }
+        /*
+        switch(operacao){
+            case ("Soma" || "soma"):
+                document.write(soma(num1, num2, operacao))
+                break
+            case "Subtração" || "subtração":
+                document.write(subtracao(num1, num2, operacao))
+                break
+            default:
+                document.write("Voce não digitou um numero valido")
+        }
+        */
+       if(operacao == "Soma" || operacao == "soma"){
+            document.write(soma(num1, num2, operacao))
+       }else if(operacao == "Subtração" || operacao == "subtração"){
+            document.write(subtracao(num1, num2, operacao))
+       }else{
+            document.write("Você não digitou uma operação inválida")
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
