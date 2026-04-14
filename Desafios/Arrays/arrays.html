@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="button"]{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="caixa" placeholder="Ex: Cadeira">
+    <input onclick="verificar()" type="button" value="Adicionar" id="adicionar">
+    <input onclick="ordenar()" type="button" value="Ordenar" id="ordenar">
+
+    <script>
+        var temporario = null
+        var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+        function verificar(){
+            temporario = document.getElementById('caixa').value
+            if(temporario == ''){
+                alert('Informe um valor valido')
+            }else{
+                if(objetos.indexOf(temporario) == -1){
+                    objetos.push(temporario)
+                    console.log(objetos)
+                    document.getElementById('caixa').value = ''
+                }else{
+                    alert('Objeto já adicionado')
+                }
+            }
+        }
+        function ordenar(){
+            console.log(objetos.sort())
+        }
+    </script>
+</body>
+</html>
