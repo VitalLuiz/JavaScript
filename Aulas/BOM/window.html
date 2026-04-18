@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="abrirpopup()">Abrir janela</button>
+    <button onclick="fecharpopup()">Fechar janela</button>
+    <script>
+
+        var janela
+        function abrirpopup(){
+            janela = window.open('https://www.google.com', 'nova_janela', 'width = 200px, height = 200px')
+        }
+        function fecharpopup(){
+            janela.close()
+        }
+    </script>
+</body>
+</html>

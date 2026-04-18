@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var video = Array()
+        video[1] = Array()
+        video[1]['nome'] = 'Full Metal Alchemist'
+        video[1]['categoria'] = 'Anime'
+
+        function getvideo(video){
+            try{
+                console.log(video[0])
+            }catch(erro){
+                'Aqui tratamos o erro'
+            }finally{
+                'Aqui continuamos sem parar o codigo'
+            }
+        }
+        getvideo(video)
+    </script>
+</body>
+</html>
