@@ -2,6 +2,18 @@ var altura = 0
 var largura = 0
 var vidas = 1
 var tempo = 10 + 1
+var criamosquitotempo = 1500
+
+var nivel = window.location.search
+nivel = nivel.replace('?', '')
+if(nivel === 'normal'){
+    criamosquitotempo = 1500
+}else if(nivel === 'dificil'){
+    criamosquitotempo = 1000
+}else if(nivel === 'chuk'){
+    criamosquitotempo = 750
+}
+
 var cronometro = setInterval(function(){
     tempo -= 1
     if(tempo < 0){
@@ -72,4 +84,4 @@ function posicaoRandomica(){
 }
 setInterval(function(){
     posicaoRandomica()
-}, 1000)
+}, criamosquitotempo)
